@@ -1,6 +1,12 @@
 # Find the maximum 
 def maximum(arr)
-  arr.max
+  max = arr[0]
+  for i in arr
+    if i > max
+      max = i
+    end
+  end
+  max
 end
 
 # expect it to return 42 below
